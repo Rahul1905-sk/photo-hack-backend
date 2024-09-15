@@ -47,7 +47,7 @@ const UserSchema = new mongoose.Schema({
 const UserData = mongoose.model("UserData", UserSchema);
 
 // POST route to store user data
-app.get("/check", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     res.status(200).json({ message: "API is working!" });
   } catch (error) {
